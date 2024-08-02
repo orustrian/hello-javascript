@@ -1,110 +1,84 @@
-/*
-Clase 2 en vídeo | 17/07/2024
-Tipos de datos, operadores y strings
-https://www.twitch.tv/videos/2200149072?t=00h08m02s
-*/
+// 1. Operadores aritmeticos
 
-// Operadores Aritméticos
+let a=5
+let b=10
 
-let a = 5
-let b = 10
+console.log(a+b, 'suma')//suma
+console.log(a-b, 'resta')//resta
+console.log(a*b,'multiplicacion')//multiplicacion
+console.log(a/b, 'division')//division
 
-console.log(a + b) // Suma
-console.log(a - b) // Resta
-console.log(a * b) // Multiplicación
-console.log(a / b) // División
+console.log(a%b, 'modulo')//modulo
 
-console.log(a % b) // Módulo
-console.log(a ** b) // Exponente
+console.log(a**b, 'exponente')//exponente
+a++
+console.log(a, 'incremento')//incremento
 
-a++ // Incremento
-console.log(a)
+b--
+console.log(b, 'decremento')//decremento
 
-b-- // Decremento
-console.log(b)
+// 2. Operadores de asignacion
+let myVariable=2
+console.log(myVariable) 
+myVariable+=2
+console.log(myVariable) 
 
-// Operadores de asignacion
+// 3. Operadores de comparacion
+console.log(a>b)
+console.log(a<b)
+console.log(a>=b)
+console.log(a==6) //igualdad por valor
+console.log(a=="6") //igualdad por valor
 
-let myVariable = 2
-console.log(myVariable)
-myVariable += 2 // Suma con asignación
-console.log(myVariable)
+console.log(a===6) //igualdad por identidad
+console.log(a==="6") //igualdad por identidad
+console.log(a != 6) //igualdad por identidad
+console.log(a!=="6") //igualdad por identidad
 
-myVariable -= 2 // Resta con asignación
-myVariable *= 2 // Multiplicación con asignación
-myVariable /= 2 // División con asignación
-myVariable %= 2 // Módulo con asignación
-myVariable **= 2 // Exponente con asignación
+console.log(0== false)  
+console.log(1== false)  
+console.log(2== false)  
 
-// Operadores de comparación
+console.log(0== "")  
 
-console.log(a > b) // Mayor que
-console.log(a < b) // Menor que
-console.log(a >= b) // Mayor o igual que
-console.log(a <= b) // Menor o igual que
-console.log(a == b) // Igualdad por valor
-console.log(a == 6)
-console.log(a == "6")
-console.log(a == a)
-console.log(a === a) // Igualdad por identidad (por tipo y valor) o igualdad estricta
-console.log(a === 6)
-console.log(a === "6")
-console.log(a != 6) // Desigualdad por valor
-console.log(a !== "6") // Desigualdad por identidad (por tipo y valor) o desigualdad estricta
-console.log(0 == false)
-console.log(1 == false)
-console.log(2 == false)
-console.log(0 == "")
-console.log(0 == " ")
-console.log(0 == '')
-console.log(0 == "Hola")
-console.log(0 === "")
-console.log(undefined == null)
-console.log(undefined === null)
+// 4. truthy values (valores verdaderos)
+//Todos los numeros positivos y negativos menos el cero
+//Todas las cadenas de texto menos las vacias 
+//El boolean true
 
-/*
-Truthy values (valores verdaderos)
+//5.Falsy values (valores falsos)
+//0
+//0n
+//Null
+//undefined
+//NaN
+// El boolean false
+//Cadenas de texto vacias
 
-- Todos los numeros positivos y negativos menos el cero
-- Todas las cadenas de texto menos las vacías
-- El boolean true
-*/
+//6. operadores logicos
 
-/*
-Falsy values (valores falsos)
+//and (&&)
 
-- 0
--  0n
-- null
-- undefined
-- NaN (Not a Number)
-- El boolean false
-- Cadenas de texto vacías 
-*/
+console.log(5>10 && 15 >20 )
+console.log(5<10 && 15 <20 )
+console.log(5<10 && 15 >20 )
+console.log(5>10 && 15 >20  && 30>40 )
 
-// Operadores lógicos
 
-// and (&&)
-console.log(5 > 10 && 15 > 20)
-console.log(5 < 10 && 15 < 20)
-console.log(5 < 10 && 15 > 20)
-console.log(5 > 10 && 15 > 20 && 30 > 40)
+//OR (||)
 
-// or (||)
-console.log(5 > 10 || 15 > 20)
-console.log(5 < 10 || 15 < 20)
-console.log(5 < 10 || 15 > 20)
-console.log(5 > 10 || 15 > 20 || 30 > 40)
-
-console.log(5 > 10 && 15 > 20 || 30 < 40)
-
+console.log(5>10 || 15 >20 )
+console.log(5<10 || 15 <20 )
+console.log(5<10 || 15 >20 )
+console.log( 5>10  && 15>20 || 30 >40 )
+console.log( 5>10  && 15>20 || 30 <40 )
+ 
 // not (!)
+
 console.log(!true)
 console.log(!false)
-console.log(!(5 > 10 && 15 > 20))
-console.log(!(5 > 10 || 15 > 20))
 
 // Operadores ternarios
+const isRaining=true 
 
-const isRaining = false
-isRaining ? console.log("Está lloviendo") : console.log("No está lloviendo")
+isRaining ? console.log("esta lloviendo") : console.log("No esta lloviendo")

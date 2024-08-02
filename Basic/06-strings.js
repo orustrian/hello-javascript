@@ -1,49 +1,30 @@
-/*
-Clase 2 en vídeo | 17/07/2024
-Tipos de datos, operadores y strings
-https://www.twitch.tv/videos/2200149072?t=00h08m02s
-*/
-
-// Strings (cadenas de texto)
-
-// Concatenación
-
-let myName = "Brais"
-let greeting = "Hola, " + myName + "!"
+//1. strings 
+let myName="Oliver"
+let greeting="Hola, "+ myName
 console.log(greeting)
 console.log(typeof greeting)
 
-// Longitud
-
+//2. Longitud
 console.log(greeting.length)
-
-// Acceso a caracteres
-
 console.log(greeting[0])
-console.log(greeting[11])
+console.log(greeting[1])
 
-// Métodos comunes
+console.log(greeting.toUpperCase())
+console.log(greeting.toLowerCase())
+console.log(greeting.indexOf("Oliver"))
+console.log(greeting.indexOf(","))
+console.log(greeting.includes(","))
+console.log(greeting.slice(0,10))
+console.log(greeting.replace("Oliver","Leaho"))
 
-console.log(greeting.toUpperCase()) // Mayúsculas
-console.log(greeting.toLowerCase()) // Minúsculas
-console.log(greeting.indexOf("Hola")) // Índice
-console.log(greeting.indexOf("Brais"))
-console.log(greeting.indexOf("MoureDev"))
-console.log(greeting.includes("Hola")) // Incluye
-console.log(greeting.includes("Brais"))
-console.log(greeting.includes("MoureDev"))
-console.log(greeting.slice(0, 10)) // Sección
-console.log(greeting.replace("Brais", "MoureDev")) // Reemplazo
+//3. Template literals (plantillas literales)
 
-// Template literals (plantillas literales)
+let message= `hola, este es mi 
+curso de javascript`
 
-// Strings en varias líneas
-let message = `Hola, este
-es mi
-curso de
-JavaScript`
+let email="olirustrian@gmail.com"
 console.log(message)
+console.log(`hola, ${myName}! tu email es ${email}`) //ejemplo de interpolar
 
-// Interpolación de valores
-let email = "braismoure@mouredev.com"
-console.log(`Hola, ${myName}! Tu email es ${email}.`)
+
+

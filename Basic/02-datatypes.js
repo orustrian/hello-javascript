@@ -1,56 +1,45 @@
-/*
-Clase 2 en vídeo | 17/07/2024
-Tipos de datos, operadores y strings
-https://www.twitch.tv/videos/2200149072?t=00h08m02s
-*/
+//Tipos de datos primitivos
 
-// Tipos de datos primitivos
+//  1. cadenas de texto  (string)
+let name="Oli Rust"
+let alias='olirus'
+let email= `olirustrian@gmail.com`  
 
-// Cadenas de texto (string)
-let myName = "Brais Moure"
-let alias = 'MoureDev'
-let email = `braismoure@mouredev.com`
+//2. Números (number)
+let age=37  //entero
+let height=1.77  //decimal
 
-// Números (number)
-let age = 37 // Entero
-let height = 1.77 // Decimal
-
-// Booleanos (boolean)
+//3. booleanos (boolen)
 let isTeacher = true
 let isStudent = false
 
-// Undefined
+//4. Undefined
 let undefinedValue
 console.log(undefinedValue)
 
-// Null
-let nullValue = null
+//5. Null
+let nullValue=null
 
-// Symbol
+//6. Symbol
+let mySymbol=Symbol("mysymbol")
 
-let mySymbol = Symbol("mysymbol")
+//7. Bigint
+let mybigint=BigInt(5646546578791165456456456)
+let mybigint2= 5646546578791165456456456235n
 
-// BigInt
-
-let myBigInt = BigInt(817239871289371986589716389471628379612983761289376129)
-let myBigInt2 = 817239871289371986589716389471628379612983761289376129n
-
-// Mostramos los tipos de datos
-console.log(typeof myName)
+//mostramos los tipos de datos
+console.log(typeof name)  
 console.log(typeof alias)
-console.log(typeof email)
+console.log(typeof email)    
 
 console.log(typeof age)
-console.log(typeof height)
+console.log(typeof height)  
 
 console.log(typeof isTeacher)
 console.log(typeof isStudent)
 
 console.log(typeof undefinedValue)
+console.log(typeof nullValue)   
+console.log(typeof mybigint)    
+console.log(typeof mybigint2)    
 
-console.log(typeof nullValue)
-
-console.log(typeof mySymbol)
-
-console.log(typeof myBigInt)
-console.log(typeof myBigInt2)
