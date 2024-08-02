@@ -29,7 +29,15 @@ if (num >0){
 }
 console.log(mensa)
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
-
+let edad=15 
+let di=0
+if(edad>=18){
+mensa="puede votar"
+}else {
+di=18-edad
+  mensa ="no puede votar, menor de 18 años le faltan " +di +" años"
+}
+console.log(mensa)
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
 //    dependiendo de la edad 
 
