@@ -29,7 +29,7 @@ if (num >0){
 }
 console.log(mensa)
 // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
-let edad=15 
+let edad=18 
 let di=0
 if(edad>=18){
 mensa="puede votar"
@@ -41,14 +41,88 @@ console.log(mensa)
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
 //    dependiendo de la edad 
 
+const message = edad<=17 ? "es menor" : "es mayor"
+console.log(message)
+
 // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
-
+let mesid=3
+let letrero=""
+if (mesid==1)
+  {
+    letrero="Verano"
+  }else if(mesid==2)
+      { letrero="Verano"}
+      else if (mesid==3){ letrero="Primavera"}
+      else if (mesid==4){ letrero="Primavera"}
+      else if (mesid==5){ letrero="Invierno"}
+      else if (mesid==6){ letrero="Invierno"}
+  
+      console.log(letrero)
 // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+ 
+let diasmes=0
+if (mesid==1)
+{
+  diasmes=31
+}else if(mesid==2)
+    {diasmes=28}
+    else if (mesid==3){diasmes=31}
 
+    console.log('dias del mes ' +diasmes)
 // switch
 
 // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
 
+let idio="Spanish"
+let idiomen=""
+switch(idio)
+{
+  case "English":
+    idiomen="Hello"
+    break
+    case "Spanish":
+    idiomen="Hola"
+    break
+}
+console.log(idiomen)
 // 9. Usa un switch para hacer de nuevo el ejercicio 6
 
+ 
+switch (mesid)
+{
+  case  1:
+      letrero="verano"
+      break
+      case  2:
+      letrero="verano"
+      break
+      case  3:
+      letrero="otoño"
+      break
+      case  4:
+      letrero="otoño"
+      break
+      case  5:
+      letrero="invierno"
+      break
+      case  6:
+        letrero="invierno"
+        break
+} 
 // 10. Usa un switch para hacer de nuevo el ejercicio 7
+
+
+ 
+switch (mesid)
+{ 
+   case 1: 
+  diasmes=31
+  break
+   case 2:
+     diasmes=28
+     break
+    case 3: 
+      diasmes=31 
+      break
+}
+    console.log('dias del mes con switch ' +diasmes)
