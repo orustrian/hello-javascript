@@ -1,10 +1,28 @@
 <html>
     <head>
-
+      
     </head>
     <body>
-        <script type="text/javascript">
-           document.write('Hola esta es una prueba')
+       
+         <script type="text/javascript">
+          //let d = new Date();
+         // document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+          function mostrarComprendidos(x1,x2)
+            {
+            var inicio;
+            for(inicio=x1;inicio<=x2;inicio++)
+            {
+                  document.write(inicio+' ');
+            }
+            }
+
+            var valor1,valor2;
+            valor1=prompt('Ingrese valor inferior:','');
+            valor1=parseInt(valor1);
+            valor2=prompt('Ingrese valor superior:','');
+            valor2=parseInt(valor2);
+            mostrarComprendidos(valor1,valor2);
+       //    document.write('Hola esta es una prueba') -->
         //    document.write('Hola esta es una prueba')
         //     document.write('<br>')
         //     var nombre='Oliver';
@@ -79,23 +97,20 @@
 
           //   }
           //   console.log(result); 
-          let cara='# '
-          for (let i=1; i<=8 ; i++)
-{
-if (i%2 ==0 )
-{
-  document.write (cara.repeat(4)) ;
+//           let cara='# '
+//           for (let i=1; i<=8 ; i++)
+// {
+// if (i%2 ==0 )
+// {
+//   document.write (cara.repeat(4)) ;
   
-}
+// }
   
 
-else {document.write(' '+cara.repeat(4)) ;}
+// else {document.write(' '+cara.repeat(4)) ;}
  
-}
+// }  
 
-  
-             
-
-</script>
+ </script>
     </body>
 </html>
